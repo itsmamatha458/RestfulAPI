@@ -47,7 +47,7 @@ namespace RestfulAPI.Controllers
         {
             var result = (_context.Bookings.Find(id));
             if (result == null)
-                return new JsonResult(NotFound());
+                return new JsonResult(Not Found());
             _context.Bookings.Remove(result);
             _context.SaveChanges();
 
